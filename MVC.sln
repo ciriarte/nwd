@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E3ABD7BD-C088-433D-8901-F5A74C430AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spartanprogramming.MVC", "Framework\Spartanprogramming.MVC.csproj", "{E16629B2-B35C-494A-98D2-3BA231D9AD54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3ABD7BD-C088-433D-8901-F5A74C430AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3ABD7BD-C088-433D-8901-F5A74C430AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3ABD7BD-C088-433D-8901-F5A74C430AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3ABD7BD-C088-433D-8901-F5A74C430AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16629B2-B35C-494A-98D2-3BA231D9AD54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16629B2-B35C-494A-98D2-3BA231D9AD54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16629B2-B35C-494A-98D2-3BA231D9AD54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16629B2-B35C-494A-98D2-3BA231D9AD54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal
