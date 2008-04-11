@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-namespace Spartanprogramming.MVC.Web
+namespace Spartanprogramming.Web.MVC
 {
     public class ViewPage<TViewData> : System.Web.UI.Page, IView<TViewData>
     {

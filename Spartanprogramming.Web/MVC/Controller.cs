@@ -1,40 +1,33 @@
 ﻿using System;
 using System.Data;
 using System.Configuration;
-using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using System.Xml.Linq;
 using System.Reflection;
 using System.Collections.Generic;
-using Spartanprogramming.MVC.Web;
+using Spartanprogramming.Web;
+using System.Security.Principal;
 
-namespace Spartanprogramming.MVC
+namespace Spartanprogramming.Web.MVC
 {
     public class Controller
     {
-        public Controller()
-        {
-            
-        }
-
         virtual
-        public void Execute(HttpContext context)
+        public void Execute(IHttpContext context)
         {
             _context = context;
-            _actions.Map(_context.Request.Url);
         }
 
-        public HttpResponse Response
+        public IHttpResponse Response
         {
             get { return _context.Response; }
         }
 
-        public HttpRequest Request
+        public IHttpRequest Request
         {
             get { return _context.Request; }
         }
@@ -45,11 +38,35 @@ namespace Spartanprogramming.MVC
             _context.RewritePath(_views.Map(viewName), false);
         }
 
+        public void RenderView(String viewName)
+        {
+            _context.RewritePath(_views.Map(viewName), false);
+        }
+
+        public void RedirectToAction(String action)
+        {
+            Response.Redirect(action, true);
+        }
+
+        public IHttpContext Context {
+            get
+            {
+                return _context;
+            }
+        }
+
+        public IPrincipal User {
+            get
+            {
+                return _context.User;
+            }
+        }
+
         protected
         IMappingStrategy<Uri, MethodInfo> _actions = null;
         protected
         IMappingStrategy<String, String>  _views   = null;
 
-        private HttpContext               _context;
+        private IHttpContext              _context;
     }
 }

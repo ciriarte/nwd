@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Configuration;
 
-namespace Spartanprogramming.MVC
+namespace Spartanprogramming.Web.MVC
 {
     public class ViewMappings<TController> : ConfigurationSection, IMappingStrategy<String, String>
     {

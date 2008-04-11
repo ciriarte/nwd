@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Reflection;
 
-namespace Spartanprogramming.MVC
+namespace Spartanprogramming.Web.MVC
 {
     public interface IMappingStrategy<TInput, TOutput>
     {

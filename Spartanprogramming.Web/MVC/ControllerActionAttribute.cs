@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-namespace Spartanprogramming.MVC
+namespace Spartanprogramming.Web.MVC
 {
     [global::System.AttributeUsage(AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
     public sealed class ControllerActionAttribute : Attribute
